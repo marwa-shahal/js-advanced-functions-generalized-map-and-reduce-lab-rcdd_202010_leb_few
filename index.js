@@ -11,7 +11,7 @@ function map(source,func) {
 
 
 function reduce(arr,callB,starter){
-  let start= (starter)? starter:arr[0];
+  let start= (!starter)? arr[0]:starter;
   for (let i=0; i<arr.length;i++){
   start=callB(arr[i],start)
 }
