@@ -10,12 +10,12 @@ function map(source,func) {
 }
 
 
-function reduce(arr,callB,starter){
-  let start= (!!starter)? starter:arr[0];
-  for (let i=0; i<arr.length;i++){
-  start=callB(arr[i],start)
-}
-  return start
+function reduce(array, combine, start) {
+  let current = start;
+  for (let element of array) {
+    current = combine(current, element);
+  }
+  return current;
 }
   
 
