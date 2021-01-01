@@ -11,6 +11,6 @@ function map(source,func) {
 }
 
 
-function reduce(s,acc){
+function reduce(s,acc,start){
   
 
