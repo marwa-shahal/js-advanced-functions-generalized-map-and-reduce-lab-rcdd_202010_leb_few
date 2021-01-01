@@ -13,7 +13,7 @@ function map(source,func) {
 
 function reduce(arr,acc,starter){
   if (arr.length===0){
-    acc=starter
+    return starter
   }
   else {
     
