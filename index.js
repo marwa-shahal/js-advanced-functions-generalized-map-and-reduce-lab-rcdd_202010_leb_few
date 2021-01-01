@@ -12,7 +12,5 @@ function map(source,func) {
 
 
 function reduce(s,acc){
-  if()
-  ()
-}
+  
 
