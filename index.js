@@ -11,7 +11,7 @@ function map(source,func) {
 
 
 function reduce(array, combine, start) {
-  let current = start;
+  let current = (!!start)? start:array[0];
   for (let element of array) {
     current = combine(current, element);
   }
