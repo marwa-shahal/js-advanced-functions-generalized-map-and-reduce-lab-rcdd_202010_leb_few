@@ -11,6 +11,13 @@ function map(source,func) {
 }
 
 
-function reduce(s,acc,start){
+function reduce(arr,acc,starter){
+  if (arr.length===0){
+    acc=starter
+  }
+  else {
+    
+  }
+}
   
 
