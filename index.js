@@ -13,8 +13,8 @@ function map(source,func) {
 function reduce(array, combine, start) {
   let current = (!!start)? start:array[0];
   let i= (!!start)? 0:1;
-  for (;i<array.length;i++) {
-    current = combine(current, element);
+  for (i;i<array.length;i++) {
+    current = combine(current, array[i]);
   }
   return current;
 }
